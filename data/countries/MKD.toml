@@ -1,0 +1,9 @@
+# North Macedonia
+iso3 = "MKD"
+iso2 = "MK"
+name = "North Macedonia"
+slug = "north-macedonia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Северна Македонија", lang = "mk" },
+]

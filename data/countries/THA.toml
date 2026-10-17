@@ -1,0 +1,9 @@
+# Thailand
+iso3 = "THA"
+iso2 = "TH"
+name = "Thailand"
+slug = "thailand"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "ไทย", lang = "th" },
+]

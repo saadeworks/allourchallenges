@@ -1,0 +1,9 @@
+# Bhutan
+iso3 = "BTN"
+iso2 = "BT"
+name = "Bhutan"
+slug = "bhutan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "འབྲུག", lang = "dz" },
+]

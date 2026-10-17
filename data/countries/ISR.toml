@@ -1,0 +1,10 @@
+# Israel
+iso3 = "ISR"
+iso2 = "IL"
+name = "Israel"
+slug = "israel"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "ישראל", lang = "he" },
+  { name = "إسرائيل", lang = "ar" },
+]

@@ -1,0 +1,9 @@
+# Lithuania
+iso3 = "LTU"
+iso2 = "LT"
+name = "Lithuania"
+slug = "lithuania"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Lietuva", lang = "lt" },
+]

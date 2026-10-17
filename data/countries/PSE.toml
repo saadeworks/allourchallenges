@@ -1,0 +1,9 @@
+# Palestine
+iso3 = "PSE"
+iso2 = "PS"
+name = "Palestine"
+slug = "palestine"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "فلسطين", lang = "ar" },
+]

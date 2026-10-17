@@ -1,0 +1,9 @@
+# Mongolia
+iso3 = "MNG"
+iso2 = "MN"
+name = "Mongolia"
+slug = "mongolia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Монгол", lang = "mn" },
+]

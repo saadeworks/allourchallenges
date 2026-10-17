@@ -1,0 +1,9 @@
+# Georgia
+iso3 = "GEO"
+iso2 = "GE"
+name = "Georgia"
+slug = "georgia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "საქართველო", lang = "ka" },
+]

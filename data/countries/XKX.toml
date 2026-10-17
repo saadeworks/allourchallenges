@@ -1,0 +1,10 @@
+# Kosovo
+iso3 = "XKX"
+iso2 = "XK"
+name = "Kosovo"
+slug = "kosovo"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Kosovë", lang = "sq" },
+  { name = "Косово", lang = "sr" },
+]

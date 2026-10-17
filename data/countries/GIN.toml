@@ -1,0 +1,9 @@
+# Guinea
+iso3 = "GIN"
+iso2 = "GN"
+name = "Guinea"
+slug = "guinea"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Guinée", lang = "fr" },
+]

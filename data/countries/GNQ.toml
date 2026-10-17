@@ -1,0 +1,11 @@
+# Equatorial Guinea
+iso3 = "GNQ"
+iso2 = "GQ"
+name = "Equatorial Guinea"
+slug = "equatorial-guinea"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Guinea Ecuatorial", lang = "es" },
+  { name = "Guinée équatoriale", lang = "fr" },
+  { name = "Guiné Equatorial", lang = "pt" },
+]

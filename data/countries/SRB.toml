@@ -1,0 +1,10 @@
+# Serbia
+iso3 = "SRB"
+iso2 = "RS"
+name = "Serbia"
+slug = "serbia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Србија", lang = "sr" },
+  { name = "Srbija", lang = "sr-Latn" },
+]

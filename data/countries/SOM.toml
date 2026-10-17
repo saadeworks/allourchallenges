@@ -1,0 +1,10 @@
+# Somalia
+iso3 = "SOM"
+iso2 = "SO"
+name = "Somalia"
+slug = "somalia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Soomaaliya", lang = "so" },
+  { name = "الصومال", lang = "ar" },
+]

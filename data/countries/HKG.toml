@@ -1,0 +1,9 @@
+# Hong Kong
+iso3 = "HKG"
+iso2 = "HK"
+name = "Hong Kong"
+slug = "hong-kong"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "香港", lang = "zh-Hant" },
+]

@@ -1,0 +1,9 @@
+# North Korea
+iso3 = "PRK"
+iso2 = "KP"
+name = "North Korea"
+slug = "north-korea"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "조선", lang = "ko" },
+]

@@ -1,0 +1,9 @@
+# Belarus
+iso3 = "BLR"
+iso2 = "BY"
+name = "Belarus"
+slug = "belarus"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Беларусь", lang = "ru" },
+]

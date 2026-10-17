@@ -1,0 +1,9 @@
+# Estonia
+iso3 = "EST"
+iso2 = "EE"
+name = "Estonia"
+slug = "estonia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Eesti", lang = "et" },
+]

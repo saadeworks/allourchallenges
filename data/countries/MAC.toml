@@ -1,0 +1,10 @@
+# Macao
+iso3 = "MAC"
+iso2 = "MO"
+name = "Macao"
+slug = "macao"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "澳門", lang = "zh-Hant" },
+  { name = "Macau", lang = "pt" },
+]

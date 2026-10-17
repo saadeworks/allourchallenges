@@ -1,0 +1,9 @@
+# Moldova
+iso3 = "MDA"
+iso2 = "MD"
+name = "Moldova"
+slug = "moldova"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Republica Moldova", lang = "ro" },
+]

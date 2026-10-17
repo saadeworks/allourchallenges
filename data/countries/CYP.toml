@@ -1,0 +1,10 @@
+# Cyprus
+iso3 = "CYP"
+iso2 = "CY"
+name = "Cyprus"
+slug = "cyprus"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Κύπρος", lang = "el" },
+  { name = "Kıbrıs", lang = "tr" },
+]

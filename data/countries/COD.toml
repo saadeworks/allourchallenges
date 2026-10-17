@@ -1,0 +1,9 @@
+# Democratic Republic of the Congo
+iso3 = "COD"
+iso2 = "CD"
+name = "Democratic Republic of the Congo"
+slug = "democratic-republic-of-the-congo"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "République démocratique du Congo", lang = "fr" },
+]

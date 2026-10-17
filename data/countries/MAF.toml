@@ -1,0 +1,9 @@
+# Saint Martin (French part)
+iso3 = "MAF"
+iso2 = "MF"
+name = "Saint Martin (French part)"
+slug = "saint-martin-french-part"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Saint-Martin", lang = "fr" },
+]

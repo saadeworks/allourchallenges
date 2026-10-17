@@ -1,0 +1,9 @@
+# Madagascar
+iso3 = "MDG"
+iso2 = "MG"
+name = "Madagascar"
+slug = "madagascar"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Madagasikara", lang = "mg" },
+]

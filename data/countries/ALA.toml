@@ -1,0 +1,9 @@
+# Åland Islands
+iso3 = "ALA"
+iso2 = "AX"
+name = "Åland Islands"
+slug = "aland-islands"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Åland", lang = "sv" },
+]

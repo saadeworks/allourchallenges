@@ -1,0 +1,10 @@
+# Algeria
+iso3 = "DZA"
+iso2 = "DZ"
+name = "Algeria"
+slug = "algeria"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "الجزائر", lang = "ar" },
+  { name = "Algérie", lang = "fr" },
+]

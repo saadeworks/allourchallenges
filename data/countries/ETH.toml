@@ -1,0 +1,9 @@
+# Ethiopia
+iso3 = "ETH"
+iso2 = "ET"
+name = "Ethiopia"
+slug = "ethiopia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "ኢትዮጵያ", lang = "am" },
+]

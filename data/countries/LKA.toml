@@ -1,0 +1,10 @@
+# Sri Lanka
+iso3 = "LKA"
+iso2 = "LK"
+name = "Sri Lanka"
+slug = "sri-lanka"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "ශ්‍රී ලංකාව", lang = "si" },
+  { name = "இலங்கை", lang = "ta" },
+]

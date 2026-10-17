@@ -1,0 +1,10 @@
+# Norway
+iso3 = "NOR"
+iso2 = "NO"
+name = "Norway"
+slug = "norway"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Norge", lang = "nb" },
+  { name = "Noreg", lang = "nn" },
+]

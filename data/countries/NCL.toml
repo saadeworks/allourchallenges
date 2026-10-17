@@ -1,0 +1,9 @@
+# New Caledonia
+iso3 = "NCL"
+iso2 = "NC"
+name = "New Caledonia"
+slug = "new-caledonia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Nouvelle-Calédonie", lang = "fr" },
+]

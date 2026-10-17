@@ -1,0 +1,9 @@
+# Bonaire, Sint Eustatius and Saba
+iso3 = "BES"
+iso2 = "BQ"
+name = "Bonaire, Sint Eustatius and Saba"
+slug = "bonaire-sint-eustatius-and-saba"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Caribisch Nederland", lang = "nl" },
+]

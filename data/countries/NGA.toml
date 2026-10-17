@@ -1,0 +1,9 @@
+# Nigeria
+iso3 = "NGA"
+iso2 = "NG"
+name = "Nigeria"
+slug = "nigeria"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Nàìjíríà", lang = "yo" },
+]

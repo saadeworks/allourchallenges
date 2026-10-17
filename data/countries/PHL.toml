@@ -1,0 +1,9 @@
+# Philippines
+iso3 = "PHL"
+iso2 = "PH"
+name = "Philippines"
+slug = "philippines"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Pilipinas", lang = "fil" },
+]

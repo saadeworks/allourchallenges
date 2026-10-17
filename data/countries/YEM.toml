@@ -1,0 +1,9 @@
+# Yemen
+iso3 = "YEM"
+iso2 = "YE"
+name = "Yemen"
+slug = "yemen"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "اليمن", lang = "ar" },
+]

@@ -1,0 +1,9 @@
+# Western Sahara
+iso3 = "ESH"
+iso2 = "EH"
+name = "Western Sahara"
+slug = "western-sahara"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "الصحراء الغربية", lang = "ar" },
+]

@@ -1,0 +1,9 @@
+# Romania
+iso3 = "ROU"
+iso2 = "RO"
+name = "Romania"
+slug = "romania"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "România", lang = "ro" },
+]

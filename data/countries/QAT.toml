@@ -1,0 +1,9 @@
+# Qatar
+iso3 = "QAT"
+iso2 = "QA"
+name = "Qatar"
+slug = "qatar"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "قطر", lang = "ar" },
+]

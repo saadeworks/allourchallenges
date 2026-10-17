@@ -1,0 +1,10 @@
+# Central African Republic
+iso3 = "CAF"
+iso2 = "CF"
+name = "Central African Republic"
+slug = "central-african-republic"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Ködörösêse tî Bêafrîka", lang = "sg" },
+  { name = "République centrafricaine", lang = "fr" },
+]

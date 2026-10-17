@@ -1,0 +1,9 @@
+# Sao Tome and Principe
+iso3 = "STP"
+iso2 = "ST"
+name = "Sao Tome and Principe"
+slug = "sao-tome-and-principe"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "São Tomé e Príncipe", lang = "pt" },
+]

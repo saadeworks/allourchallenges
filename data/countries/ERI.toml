@@ -1,0 +1,10 @@
+# Eritrea
+iso3 = "ERI"
+iso2 = "ER"
+name = "Eritrea"
+slug = "eritrea"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "ኤርትራ", lang = "ti" },
+  { name = "إريتريا", lang = "ar" },
+]

@@ -1,0 +1,9 @@
+# Panama
+iso3 = "PAN"
+iso2 = "PA"
+name = "Panama"
+slug = "panama"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Panamá", lang = "es" },
+]

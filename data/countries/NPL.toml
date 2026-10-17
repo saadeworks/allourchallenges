@@ -1,0 +1,9 @@
+# Nepal
+iso3 = "NPL"
+iso2 = "NP"
+name = "Nepal"
+slug = "nepal"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "नेपाल", lang = "ne" },
+]

@@ -1,0 +1,9 @@
+# Brazil
+iso3 = "BRA"
+iso2 = "BR"
+name = "Brazil"
+slug = "brazil"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Brasil", lang = "pt" },
+]

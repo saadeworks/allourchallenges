@@ -1,0 +1,9 @@
+# Germany
+iso3 = "DEU"
+iso2 = "DE"
+name = "Germany"
+slug = "germany"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Deutschland", lang = "de" },
+]

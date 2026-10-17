@@ -1,0 +1,9 @@
+# Papua New Guinea
+iso3 = "PNG"
+iso2 = "PG"
+name = "Papua New Guinea"
+slug = "papua-new-guinea"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Papua Niugini", lang = "tpi" },
+]

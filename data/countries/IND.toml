@@ -1,0 +1,9 @@
+# India
+iso3 = "IND"
+iso2 = "IN"
+name = "India"
+slug = "india"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "भारत", lang = "hi" },
+]

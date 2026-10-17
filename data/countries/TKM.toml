@@ -1,0 +1,9 @@
+# Turkmenistan
+iso3 = "TKM"
+iso2 = "TM"
+name = "Turkmenistan"
+slug = "turkmenistan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Türkmenistan", lang = "tk" },
+]

@@ -1,0 +1,9 @@
+# Sweden
+iso3 = "SWE"
+iso2 = "SE"
+name = "Sweden"
+slug = "sweden"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Sverige", lang = "sv" },
+]

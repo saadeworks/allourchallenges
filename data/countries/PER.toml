@@ -1,0 +1,9 @@
+# Peru
+iso3 = "PER"
+iso2 = "PE"
+name = "Peru"
+slug = "peru"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Perú", lang = "es" },
+]

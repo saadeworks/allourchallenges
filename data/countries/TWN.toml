@@ -1,0 +1,9 @@
+# Taiwan
+iso3 = "TWN"
+iso2 = "TW"
+name = "Taiwan"
+slug = "taiwan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "台灣", lang = "zh-Hant" },
+]

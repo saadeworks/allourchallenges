@@ -1,0 +1,9 @@
+# Haiti
+iso3 = "HTI"
+iso2 = "HT"
+name = "Haiti"
+slug = "haiti"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Haïti", lang = "ht" },
+]

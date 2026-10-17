@@ -1,0 +1,9 @@
+# Netherlands
+iso3 = "NLD"
+iso2 = "NL"
+name = "Netherlands"
+slug = "netherlands"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Nederland", lang = "nl" },
+]

@@ -1,0 +1,9 @@
+# Dominican Republic
+iso3 = "DOM"
+iso2 = "DO"
+name = "Dominican Republic"
+slug = "dominican-republic"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "República Dominicana", lang = "es" },
+]

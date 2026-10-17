@@ -1,0 +1,9 @@
+# Benin
+iso3 = "BEN"
+iso2 = "BJ"
+name = "Benin"
+slug = "benin"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Bénin", lang = "fr" },
+]

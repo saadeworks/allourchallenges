@@ -1,0 +1,9 @@
+# Sint Maarten (Dutch part)
+iso3 = "SXM"
+iso2 = "SX"
+name = "Sint Maarten (Dutch part)"
+slug = "sint-maarten-dutch-part"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Sint-Maarten", lang = "nl" },
+]

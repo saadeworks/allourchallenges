@@ -1,0 +1,11 @@
+# Singapore
+iso3 = "SGP"
+iso2 = "SG"
+name = "Singapore"
+slug = "singapore"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "新加坡", lang = "zh" },
+  { name = "Singapura", lang = "ms" },
+  { name = "சிங்கப்பூர்", lang = "ta" },
+]

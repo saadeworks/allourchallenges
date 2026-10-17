@@ -1,0 +1,10 @@
+# Comoros
+iso3 = "COM"
+iso2 = "KM"
+name = "Comoros"
+slug = "comoros"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "جزر القمر", lang = "ar" },
+  { name = "Comores", lang = "fr" },
+]

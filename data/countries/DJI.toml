@@ -1,0 +1,9 @@
+# Djibouti
+iso3 = "DJI"
+iso2 = "DJ"
+name = "Djibouti"
+slug = "djibouti"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "جيبوتي", lang = "ar" },
+]

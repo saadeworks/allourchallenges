@@ -1,0 +1,9 @@
+# Mauritius
+iso3 = "MUS"
+iso2 = "MU"
+name = "Mauritius"
+slug = "mauritius"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Maurice", lang = "fr" },
+]

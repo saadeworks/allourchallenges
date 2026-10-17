@@ -1,0 +1,10 @@
+# Kazakhstan
+iso3 = "KAZ"
+iso2 = "KZ"
+name = "Kazakhstan"
+slug = "kazakhstan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Казахстан", lang = "ru" },
+  { name = "Қазақстан", lang = "kk" },
+]

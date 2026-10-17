@@ -1,0 +1,10 @@
+# Senegal
+iso3 = "SEN"
+iso2 = "SN"
+name = "Senegal"
+slug = "senegal"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Senegaal", lang = "wo" },
+  { name = "Sénégal", lang = "fr" },
+]

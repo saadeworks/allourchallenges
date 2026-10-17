@@ -1,0 +1,9 @@
+# Burundi
+iso3 = "BDI"
+iso2 = "BI"
+name = "Burundi"
+slug = "burundi"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Uburundi", lang = "rn" },
+]

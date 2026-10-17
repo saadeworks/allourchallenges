@@ -1,0 +1,9 @@
+# Lebanon
+iso3 = "LBN"
+iso2 = "LB"
+name = "Lebanon"
+slug = "lebanon"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "لبنان", lang = "ar" },
+]

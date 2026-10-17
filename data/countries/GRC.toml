@@ -1,0 +1,9 @@
+# Greece
+iso3 = "GRC"
+iso2 = "GR"
+name = "Greece"
+slug = "greece"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Ελλάδα", lang = "el" },
+]

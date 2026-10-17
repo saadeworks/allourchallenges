@@ -1,0 +1,9 @@
+# United Arab Emirates
+iso3 = "ARE"
+iso2 = "AE"
+name = "United Arab Emirates"
+slug = "united-arab-emirates"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "الإمارات العربية المتحدة", lang = "ar" },
+]

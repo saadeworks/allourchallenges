@@ -1,0 +1,9 @@
+# French Polynesia
+iso3 = "PYF"
+iso2 = "PF"
+name = "French Polynesia"
+slug = "french-polynesia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Polynésie française", lang = "fr" },
+]

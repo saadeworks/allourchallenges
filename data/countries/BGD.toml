@@ -1,0 +1,9 @@
+# Bangladesh
+iso3 = "BGD"
+iso2 = "BD"
+name = "Bangladesh"
+slug = "bangladesh"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "বাংলাদেশ", lang = "bn" },
+]

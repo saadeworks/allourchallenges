@@ -1,0 +1,10 @@
+# Ukraine
+iso3 = "UKR"
+iso2 = "UA"
+name = "Ukraine"
+slug = "ukraine"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Україна", lang = "uk" },
+  { name = "Украина", lang = "ru" },
+]

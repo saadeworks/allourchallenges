@@ -1,0 +1,10 @@
+# Luxembourg
+iso3 = "LUX"
+iso2 = "LU"
+name = "Luxembourg"
+slug = "luxembourg"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Lëtzebuerg", lang = "lb" },
+  { name = "Luxemburg", lang = "de" },
+]

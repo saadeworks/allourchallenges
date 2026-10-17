@@ -1,0 +1,10 @@
+# Azerbaijan
+iso3 = "AZE"
+iso2 = "AZ"
+name = "Azerbaijan"
+slug = "azerbaijan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Azərbaycan", lang = "az" },
+  { name = "Азәрбајҹан", lang = "az-Cyrl" },
+]

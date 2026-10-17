@@ -1,0 +1,10 @@
+# Tunisia
+iso3 = "TUN"
+iso2 = "TN"
+name = "Tunisia"
+slug = "tunisia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "تونس", lang = "ar" },
+  { name = "Tunisie", lang = "fr" },
+]

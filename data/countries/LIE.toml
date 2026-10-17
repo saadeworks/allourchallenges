@@ -1,0 +1,9 @@
+# Liechtenstein
+iso3 = "LIE"
+iso2 = "LI"
+name = "Liechtenstein"
+slug = "liechtenstein"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Liächteschtäi", lang = "gsw" },
+]

@@ -1,0 +1,9 @@
+# Kuwait
+iso3 = "KWT"
+iso2 = "KW"
+name = "Kuwait"
+slug = "kuwait"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "الكويت", lang = "ar" },
+]

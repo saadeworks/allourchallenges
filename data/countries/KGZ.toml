@@ -1,0 +1,10 @@
+# Kyrgyzstan
+iso3 = "KGZ"
+iso2 = "KG"
+name = "Kyrgyzstan"
+slug = "kyrgyzstan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Кыргызстан", lang = "ky" },
+  { name = "Киргизия", lang = "ru" },
+]

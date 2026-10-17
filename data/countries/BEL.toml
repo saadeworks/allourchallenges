@@ -1,0 +1,11 @@
+# Belgium
+iso3 = "BEL"
+iso2 = "BE"
+name = "Belgium"
+slug = "belgium"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "België", lang = "nl" },
+  { name = "Belgique", lang = "fr" },
+  { name = "Belgien", lang = "de" },
+]

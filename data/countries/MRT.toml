@@ -1,0 +1,9 @@
+# Mauritania
+iso3 = "MRT"
+iso2 = "MR"
+name = "Mauritania"
+slug = "mauritania"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "موريتانيا", lang = "ar" },
+]

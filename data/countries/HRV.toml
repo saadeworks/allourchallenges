@@ -1,0 +1,9 @@
+# Croatia
+iso3 = "HRV"
+iso2 = "HR"
+name = "Croatia"
+slug = "croatia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Hrvatska", lang = "hr" },
+]

@@ -1,0 +1,9 @@
+# Svalbard and Jan Mayen
+iso3 = "SJM"
+iso2 = "SJ"
+name = "Svalbard and Jan Mayen"
+slug = "svalbard-and-jan-mayen"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Svalbard og Jan Mayen", lang = "nb" },
+]

@@ -1,0 +1,9 @@
+# Ireland
+iso3 = "IRL"
+iso2 = "IE"
+name = "Ireland"
+slug = "ireland"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Éire", lang = "ga" },
+]

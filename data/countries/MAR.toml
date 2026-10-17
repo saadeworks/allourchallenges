@@ -1,0 +1,11 @@
+# Morocco
+iso3 = "MAR"
+iso2 = "MA"
+name = "Morocco"
+slug = "morocco"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "المغرب", lang = "ar" },
+  { name = "Maroc", lang = "fr" },
+  { name = "Meṛṛuk", lang = "tzm" },
+]

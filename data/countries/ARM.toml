@@ -1,0 +1,9 @@
+# Armenia
+iso3 = "ARM"
+iso2 = "AM"
+name = "Armenia"
+slug = "armenia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Հայաստան", lang = "hy" },
+]

@@ -1,0 +1,9 @@
+# Wallis and Futuna
+iso3 = "WLF"
+iso2 = "WF"
+name = "Wallis and Futuna"
+slug = "wallis-and-futuna"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Wallis-et-Futuna", lang = "fr" },
+]

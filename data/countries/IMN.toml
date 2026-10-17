@@ -1,0 +1,9 @@
+# Isle of Man
+iso3 = "IMN"
+iso2 = "IM"
+name = "Isle of Man"
+slug = "isle-of-man"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Ellan Vannin", lang = "gv" },
+]

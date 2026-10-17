@@ -1,0 +1,9 @@
+# Syria
+iso3 = "SYR"
+iso2 = "SY"
+name = "Syria"
+slug = "syria"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "سوريا", lang = "ar" },
+]

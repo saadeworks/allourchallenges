@@ -1,0 +1,10 @@
+# Uzbekistan
+iso3 = "UZB"
+iso2 = "UZ"
+name = "Uzbekistan"
+slug = "uzbekistan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Oʻzbekiston", lang = "uz" },
+  { name = "Ўзбекистон", lang = "uz-Cyrl" },
+]

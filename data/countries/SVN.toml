@@ -1,0 +1,9 @@
+# Slovenia
+iso3 = "SVN"
+iso2 = "SI"
+name = "Slovenia"
+slug = "slovenia"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Slovenija", lang = "sl" },
+]

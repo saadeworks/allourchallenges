@@ -1,0 +1,12 @@
+# Switzerland
+iso3 = "CHE"
+iso2 = "CH"
+name = "Switzerland"
+slug = "switzerland"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Schweiz", lang = "de" },
+  { name = "Schwiiz", lang = "gsw" },
+  { name = "Suisse", lang = "fr" },
+  { name = "Svizzera", lang = "it" },
+]

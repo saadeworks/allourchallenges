@@ -1,0 +1,9 @@
+# Japan
+iso3 = "JPN"
+iso2 = "JP"
+name = "Japan"
+slug = "japan"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "日本", lang = "ja" },
+]

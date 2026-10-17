@@ -1,0 +1,9 @@
+# Mozambique
+iso3 = "MOZ"
+iso2 = "MZ"
+name = "Mozambique"
+slug = "mozambique"
+# local_names: Unicode CLDR 48.0.0, official languages
+local_names = [
+  { name = "Moçambique", lang = "pt" },
+]

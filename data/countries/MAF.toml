@@ -3,6 +3,7 @@ iso3 = "MAF"
 iso2 = "MF"
 name = "Saint Martin (French part)"
 slug = "saint-martin-french-part"
+aliases = ["St Martin (French part)"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "Saint-Martin", lang = "fr" },

@@ -3,6 +3,7 @@ iso3 = "COD"
 iso2 = "CD"
 name = "Democratic Republic of the Congo"
 slug = "democratic-republic-of-the-congo"
+aliases = ["DRC", "DR Congo", "Congo-Kinshasa"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "République démocratique du Congo", lang = "fr" },

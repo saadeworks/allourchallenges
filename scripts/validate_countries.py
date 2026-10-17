@@ -11,6 +11,7 @@ Country file format (all text values are quoted strings; dates are "YYYY-MM-DD")
     iso2 = "LV"                   # required
     name = "Latvia"               # required; common English name
     slug = "latvia"               # required; unique; used in the page URL
+    aliases = ["..."]             # optional; extra search terms, not displayed
     local_names = [               # optional; name in local language(s)
       { name = "Latvija", lang = "lv" },
     ]
@@ -62,7 +63,7 @@ RE_SHORT_NUMBER = re.compile(r"^[0-9]{2,8}$")
 RE_PHONE = re.compile(r"^\+?[0-9][0-9 ()\-]{1,24}$")
 
 VERIFICATION_KEYS = {"source", "status", "last_verified", "verified_by"}
-TOP_KEYS = {"iso3", "iso2", "name", "slug", "local_names", "page_last_reviewed",
+TOP_KEYS = {"iso3", "iso2", "name", "slug", "aliases", "local_names", "page_last_reviewed",
             "emergency", "crisis_directory", "resources"}
 EMERGENCY_NUMBER_KEYS = {"general", "police", "ambulance", "fire"}
 EMERGENCY_KEYS = EMERGENCY_NUMBER_KEYS | {"notes"} | VERIFICATION_KEYS
@@ -166,6 +167,10 @@ def check_country(r, path, data, category_ids, today):
     slug = data.get("slug")
     if not isinstance(slug, str) or not RE_SLUG.match(slug):
         r.error(where, "slug must be lowercase letters, digits and single hyphens")
+
+    aliases = data.get("aliases", [])
+    if not isinstance(aliases, list) or not all(isinstance(a, str) and a.strip() for a in aliases):
+        r.error(where, "aliases must be a list of non-empty quoted strings")
 
     local_names = data.get("local_names", [])
     if not isinstance(local_names, list):

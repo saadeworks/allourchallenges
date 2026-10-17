@@ -3,3 +3,4 @@ iso3 = "TLS"
 iso2 = "TL"
 name = "Timor-Leste"
 slug = "timor-leste"
+aliases = ["East Timor"]  # search only

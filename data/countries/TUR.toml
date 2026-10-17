@@ -3,3 +3,4 @@ iso3 = "TUR"
 iso2 = "TR"
 name = "Türkiye"
 slug = "turkiye"
+aliases = ["Turkey"]  # search only

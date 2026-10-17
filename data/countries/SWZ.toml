@@ -3,3 +3,4 @@ iso3 = "SWZ"
 iso2 = "SZ"
 name = "Eswatini"
 slug = "eswatini"
+aliases = ["Swaziland"]  # search only

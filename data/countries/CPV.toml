@@ -3,3 +3,4 @@ iso3 = "CPV"
 iso2 = "CV"
 name = "Cabo Verde"
 slug = "cabo-verde"
+aliases = ["Cape Verde"]  # search only

@@ -3,6 +3,7 @@ iso3 = "SAU"
 iso2 = "SA"
 name = "Saudi Arabia"
 slug = "saudi-arabia"
+aliases = ["KSA"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "المملكة العربية السعودية", lang = "ar" },

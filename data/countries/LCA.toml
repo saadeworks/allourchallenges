@@ -3,3 +3,4 @@ iso3 = "LCA"
 iso2 = "LC"
 name = "Saint Lucia"
 slug = "saint-lucia"
+aliases = ["St Lucia"]  # search only

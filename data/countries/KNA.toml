@@ -3,3 +3,4 @@ iso3 = "KNA"
 iso2 = "KN"
 name = "Saint Kitts and Nevis"
 slug = "saint-kitts-and-nevis"
+aliases = ["St Kitts and Nevis"]  # search only

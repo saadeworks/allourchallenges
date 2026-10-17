@@ -53,6 +53,30 @@ LOCAL_NAME_OVERRIDES = {
     ("CG", "fr"): "République du Congo",  # CLDR: informal "Congo-Brazzaville"
 }
 
+# Search-only aliases: abbreviations and former names people still type.
+# Not displayed. Places named "Saint ..." also get a "St ..." alias automatically.
+ALIASES = {
+    "ARE": ["UAE", "Emirates"],
+    "CAF": ["CAR"],
+    "CIV": ["Ivory Coast"],
+    "COD": ["DRC", "DR Congo", "Congo-Kinshasa"],
+    "COG": ["Congo-Brazzaville"],
+    "CPV": ["Cape Verde"],
+    "CZE": ["Czech Republic"],
+    "GBR": ["UK", "Great Britain", "Britain", "England", "Scotland", "Wales", "Northern Ireland"],
+    "KOR": ["ROK"],
+    "MMR": ["Burma"],
+    "NLD": ["Holland"],
+    "PRK": ["DPRK"],
+    "RUS": ["Russian Federation"],
+    "SAU": ["KSA"],
+    "SWZ": ["Swaziland"],
+    "TLS": ["East Timor"],
+    "TUR": ["Turkey"],
+    "USA": ["America"],
+    "VAT": ["Holy See"],
+}
+
 # Places not in ISO 3166-1 that get a page anyway (decision D9).
 EXTRA_PLACES = [
     {"alpha_3": "XKX", "alpha_2": "XK", "name": "Kosovo"},  # World Bank code
@@ -134,6 +158,8 @@ def render(place):
         f'name = {toml_str(place["name"])}',
         f'slug = {toml_str(place["slug"])}',
     ]
+    if place["aliases"]:
+        lines.append("aliases = [" + ", ".join(toml_str(a) for a in place["aliases"]) + "]  # search only")
     if place["local_names"]:
         lines.append(f"# local_names: Unicode CLDR {CLDR_VERSION}, official languages")
         lines.append("local_names = [")
@@ -162,8 +188,11 @@ def main():
                 missing_langs.add(lang)
             elif not any(same_name(local, n) for n in [name] + [ln["name"] for ln in local_names]):
                 local_names.append({"name": local, "lang": lang})
-        places.append({"iso3": iso3, "iso2": alpha2, "name": name,
-                       "slug": slugify(name), "local_names": local_names})
+        aliases = list(ALIASES.get(iso3, []))
+        if name.startswith("Saint "):
+            aliases.append("St " + name[len("Saint "):])
+        places.append({"iso3": iso3, "iso2": alpha2, "name": name, "slug": slugify(name),
+                       "aliases": aliases, "local_names": local_names})
 
     slugs = [p["slug"] for p in places]
     dupes = {s for s in slugs if slugs.count(s) > 1}

@@ -3,3 +3,4 @@ iso3 = "USA"
 iso2 = "US"
 name = "United States"
 slug = "united-states"
+aliases = ["America"]  # search only

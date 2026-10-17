@@ -3,3 +3,4 @@ iso3 = "GBR"
 iso2 = "GB"
 name = "United Kingdom"
 slug = "united-kingdom"
+aliases = ["UK", "Great Britain", "Britain", "England", "Scotland", "Wales", "Northern Ireland"]  # search only

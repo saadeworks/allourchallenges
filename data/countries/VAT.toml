@@ -3,6 +3,7 @@ iso3 = "VAT"
 iso2 = "VA"
 name = "Vatican City"
 slug = "vatican-city"
+aliases = ["Holy See"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "Città del Vaticano", lang = "it" },

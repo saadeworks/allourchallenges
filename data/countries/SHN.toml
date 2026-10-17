@@ -3,3 +3,4 @@ iso3 = "SHN"
 iso2 = "SH"
 name = "Saint Helena, Ascension and Tristan da Cunha"
 slug = "saint-helena-ascension-and-tristan-da-cunha"
+aliases = ["St Helena, Ascension and Tristan da Cunha"]  # search only

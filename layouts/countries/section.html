@@ -29,7 +29,7 @@
       {{- if eq (substr .Params.slug 0 1 | upper) $letter }}
       {{- $c := index hugo.Data.countries .Params.iso3 }}
       {{- $coverage := partial "coverage.html" $c }}
-      <li data-search="{{ $c.iso3 }} {{ $c.iso2 }}{{ range $c.local_names }} {{ .name }}{{ end }}">
+      <li data-search="{{ $c.iso3 }} {{ $c.iso2 }}{{ range $c.aliases }} {{ . }}{{ end }}{{ range $c.local_names }} {{ .name }}{{ end }}">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{- if ne $coverage "none" }}
         <span class="badge badge-{{ $coverage }}">{{ i18n (printf "coverage_%s" $coverage) }}</span>

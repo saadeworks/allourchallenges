@@ -3,6 +3,7 @@ iso3 = "RUS"
 iso2 = "RU"
 name = "Russia"
 slug = "russia"
+aliases = ["Russian Federation"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "Россия", lang = "ru" },

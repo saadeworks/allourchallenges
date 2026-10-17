@@ -3,6 +3,7 @@ iso3 = "BLM"
 iso2 = "BL"
 name = "Saint Barthélemy"
 slug = "saint-barthelemy"
+aliases = ["St Barthélemy"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "Saint-Barthélemy", lang = "fr" },

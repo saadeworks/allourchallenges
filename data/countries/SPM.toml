@@ -3,6 +3,7 @@ iso3 = "SPM"
 iso2 = "PM"
 name = "Saint Pierre and Miquelon"
 slug = "saint-pierre-and-miquelon"
+aliases = ["St Pierre and Miquelon"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "Saint-Pierre-et-Miquelon", lang = "fr" },

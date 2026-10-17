@@ -3,6 +3,7 @@ iso3 = "CZE"
 iso2 = "CZ"
 name = "Czechia"
 slug = "czechia"
+aliases = ["Czech Republic"]  # search only
 # local_names: Unicode CLDR 48.0.0, official languages
 local_names = [
   { name = "Česko", lang = "cs" },

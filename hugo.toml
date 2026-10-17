@@ -4,3 +4,6 @@ title = "All Our Challenges"
 
 # Placeholder phase: only the home page is needed.
 disableKinds = ["taxonomy", "term", "rss", "sitemap"]
+
+# Do not advertise the generator and version in page HTML.
+disableHugoGeneratorInject = true

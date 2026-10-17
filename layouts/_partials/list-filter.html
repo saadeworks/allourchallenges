@@ -1,0 +1,11 @@
+{{- /* Search box that filters a list as you type. See assets/js/list-filter.js.
+       Context: dict "target" (id of the list area) "label" (visible label text). */}}
+<div class="list-filter" data-filter data-filter-target="{{ .target }}"
+     data-text-count="{{ i18n "filter_count" }}" data-text-none="{{ i18n "filter_none" }}" hidden>
+  <label for="{{ .target }}-filter">{{ .label }}</label>
+  <input id="{{ .target }}-filter" type="search" autocomplete="off" spellcheck="false">
+  <p class="muted" data-filter-status aria-live="polite"></p>
+</div>
+{{- with resources.Get "js/list-filter.js" | minify | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{- end }}

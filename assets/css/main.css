@@ -46,6 +46,8 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+[hidden] { display: none !important; }
+
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 
 body {
@@ -210,6 +212,23 @@ nav a[aria-current] { color: var(--link); text-decoration: underline; text-decor
 
 .country-footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
 .country-footer p { margin: 0.25rem 0; }
+
+/* List search box */
+
+.list-filter { margin-block: 1rem; }
+.list-filter label { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+.list-filter input {
+  width: 100%;
+  max-width: 28rem;
+  padding: 0.6rem 0.75rem;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+}
+.list-filter input:focus-visible { border-color: var(--focus); }
+.list-filter p { margin: 0.25rem 0 0; min-height: 1.6em; }
 
 /* Country index */
 

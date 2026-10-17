@@ -65,6 +65,11 @@ coverage_none = "No resources yet"
 coverage_partial = "Partial"
 coverage_reviewed = "Reviewed"
 
+# List search box
+filter_countries = "Search by name, in English or a local language"
+filter_count = "Matches: %d"
+filter_none = "No matches. Try another spelling, or the name in another language."
+
 # Plural forms (tables). Keep these at the end: any plain key below a table belongs to it.
 [country_count]
 one = "{{ .Count }} country or territory"

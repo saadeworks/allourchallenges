@@ -9,6 +9,7 @@
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     <p class="muted">{{ i18n "country_count" (len $pages) }}</p>
+    {{ partial "list-filter.html" (dict "target" "country-list" "label" (i18n "filter_countries")) }}
   </div>
 
   <nav class="letter-nav" aria-label="{{ i18n "jump_to_letter" }}">
@@ -19,14 +20,16 @@
     </ul>
   </nav>
 
+  <div id="country-list">
   {{- range $letter := $letters }}
-  <section class="letter-group" aria-labelledby="letter-{{ $letter | lower }}">
+  <section class="letter-group" data-filter-group aria-labelledby="letter-{{ $letter | lower }}">
     <h2 id="letter-{{ $letter | lower }}">{{ $letter }}</h2>
     <ul class="country-list">
       {{- range $pages }}
       {{- if eq (substr .Params.slug 0 1 | upper) $letter }}
-      {{- $coverage := partial "coverage.html" (index hugo.Data.countries .Params.iso3) }}
-      <li>
+      {{- $c := index hugo.Data.countries .Params.iso3 }}
+      {{- $coverage := partial "coverage.html" $c }}
+      <li data-search="{{ $c.iso3 }} {{ $c.iso2 }}{{ range $c.local_names }} {{ .name }}{{ end }}">
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{- if ne $coverage "none" }}
         <span class="badge badge-{{ $coverage }}">{{ i18n (printf "coverage_%s" $coverage) }}</span>
@@ -37,5 +40,6 @@
     </ul>
   </section>
   {{- end }}
+  </div>
 </div>
 {{ end }}

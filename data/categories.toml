@@ -1,0 +1,39 @@
+# Help categories, in the order they appear on country pages.
+# Each id is used by resources in data/countries/*.toml.
+# Display labels live in i18n/<lang>.toml as cat_<id>, so they can be translated.
+
+[[categories]]
+id = "emergency-services"
+
+[[categories]]
+id = "health-care"
+
+[[categories]]
+id = "mental-health"
+
+[[categories]]
+id = "food"
+
+[[categories]]
+id = "housing"
+
+[[categories]]
+id = "domestic-violence"
+
+[[categories]]
+id = "legal-aid"
+
+[[categories]]
+id = "refugees-migrants"
+
+[[categories]]
+id = "social-benefits"
+
+[[categories]]
+id = "disability"
+
+[[categories]]
+id = "children-families"
+
+[[categories]]
+id = "government"

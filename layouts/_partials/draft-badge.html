@@ -1,0 +1,2 @@
+{{- /* Context: an entry with a status field. */}}
+{{- if ne .status "verified" }}<span class="badge badge-draft" title="{{ i18n "draft_note" }}">{{ i18n "draft" }}</span>{{ end }}

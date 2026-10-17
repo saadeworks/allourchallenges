@@ -14,6 +14,8 @@ disableKinds = ["sitemap"]
 [params]
   # Adds <meta name="robots" content="noindex"> to every page. Remove at launch.
   noindex = true
+  # Used for "Report a problem" links.
+  repo = "https://github.com/saadeworks/allourchallenges"
 
 [taxonomies]
   tag = "tags"

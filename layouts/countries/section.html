@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{- /* Group by the first letter of the ASCII slug, so "Åland Islands" files under A. */}}
+{{- $pages := .Pages.ByParam "slug" }}
+{{- $letters := slice }}
+{{- range $pages }}{{ $letters = $letters | append (substr .Params.slug 0 1 | upper) }}{{ end }}
+{{- $letters = $letters | uniq }}
+<div class="wrap">
+  <div class="prose">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <p class="muted">{{ i18n "country_count" (len $pages) }}</p>
+  </div>
+
+  <nav class="letter-nav" aria-label="{{ i18n "jump_to_letter" }}">
+    <ul>
+      {{- range $letters }}
+      <li><a href="#letter-{{ . | lower }}">{{ . }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+
+  {{- range $letter := $letters }}
+  <section class="letter-group" aria-labelledby="letter-{{ $letter | lower }}">
+    <h2 id="letter-{{ $letter | lower }}">{{ $letter }}</h2>
+    <ul class="country-list">
+      {{- range $pages }}
+      {{- if eq (substr .Params.slug 0 1 | upper) $letter }}
+      {{- $coverage := partial "coverage.html" (index hugo.Data.countries .Params.iso3) }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- if ne $coverage "none" }}
+        <span class="badge badge-{{ $coverage }}">{{ i18n (printf "coverage_%s" $coverage) }}</span>
+        {{- end }}
+      </li>
+      {{- end }}
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+</div>
+{{ end }}

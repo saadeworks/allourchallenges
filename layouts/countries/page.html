@@ -1,0 +1,80 @@
+{{ define "main" }}
+{{- $c := index hugo.Data.countries .Params.iso3 }}
+{{- $shown := 0 }}
+<article class="wrap prose country">
+  <h1>{{ .Title }}</h1>
+  {{- with $c.local_names }}
+  <p class="local-names"><span class="visually-hidden">{{ i18n "local_names" }}:</span>
+    {{- range $i, $ln := . }}{{ if $i }} · {{ end }}<span lang="{{ $ln.lang }}" dir="auto">{{ $ln.name }}</span>{{ end }}
+  </p>
+  {{- end }}
+
+  {{- /* 1. Emergency numbers: always first. */}}
+  <section class="emergency" aria-labelledby="emergency">
+    <h2 id="emergency">{{ i18n "emergency_numbers" }} {{ with $c.emergency }}{{ partial "draft-badge.html" . }}{{ end }}</h2>
+    {{- $em := $c.emergency }}
+    {{- if and $em (partial "visible.html" $em) }}
+    {{- $shown = add $shown 1 }}
+    <ul class="emergency-list">
+      {{- range $key := slice "general" "police" "ambulance" "fire" }}
+      {{- with index $em $key }}
+      <li><a class="tel" href="tel:{{ . }}"><span class="tel-label">{{ i18n (printf "emergency_%s" $key) }}</span> <span class="tel-number">{{ . }}</span></a></li>
+      {{- end }}
+      {{- end }}
+    </ul>
+    {{- with $em.notes }}
+    <p>{{ . }}</p>
+    {{- end }}
+    {{- else }}
+    <p>{{ i18n "emergency_not_verified" }}</p>
+    {{- end }}
+  </section>
+
+  {{- /* 2. Crisis & mental-health directory. */}}
+  {{- with $c.crisis_directory }}
+  {{- if partial "visible.html" . }}
+  {{- $shown = add $shown 1 }}
+  <section aria-labelledby="crisis">
+    <h2 id="crisis">{{ i18n "crisis_support" }}</h2>
+    <p><a href="{{ .url }}">{{ i18n "crisis_directory_link" }}</a> {{ partial "draft-badge.html" . }}</p>
+  </section>
+  {{- end }}
+  {{- end }}
+
+  {{- /* 3. Help categories, in data/categories.toml order; empty ones hidden. */}}
+  {{- $resources := $c.resources | default slice }}
+  {{- range $cat := hugo.Data.categories.categories }}
+  {{- $items := slice }}
+  {{- range where $resources "category" $cat.id }}
+    {{- if partial "visible.html" . }}{{ $items = $items | append . }}{{ end }}
+  {{- end }}
+  {{- if $items }}
+  {{- $shown = add $shown (len $items) }}
+  <section aria-labelledby="{{ $cat.id }}">
+    <h2 id="{{ $cat.id }}">{{ i18n (printf "cat_%s" $cat.id) }}</h2>
+    <ul class="resource-list">
+      {{- range $items }}
+      {{ partial "resource.html" . }}
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- end }}
+
+  {{- if not $shown }}
+  <p class="muted">{{ i18n "no_resources_yet" }}</p>
+  {{- end }}
+  <p><a href="{{ "/contribute/" | relURL }}">{{ i18n "contribute_prompt" }}</a></p>
+
+  {{- /* 5. Page footer. (4. Key indicators arrive with the map data in Phase 4.) */}}
+  <footer class="country-footer meta">
+    {{- with $c.page_last_reviewed }}
+    <p>{{ i18n "last_reviewed" }}: <time datetime="{{ . }}">{{ time.AsTime . | time.Format ":date_long" }}</time></p>
+    {{- end }}
+    <p>
+      <a href="{{ site.Params.repo }}/issues/new?title={{ printf "Problem on the %s page" .Title | urlquery }}">{{ i18n "report_problem" }}</a>
+      · <a href="{{ "/disclaimer/" | relURL }}">{{ i18n "disclaimer" }}</a>
+    </p>
+  </footer>
+</article>
+{{ end }}

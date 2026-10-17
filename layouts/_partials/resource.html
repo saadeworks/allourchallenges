@@ -1,0 +1,20 @@
+{{- /* One help resource. Context: a resource table from data/countries/*.toml. */}}
+{{- $stale := false }}
+{{- with .last_verified }}
+  {{- $stale = gt (now.Sub (time.AsTime .)).Hours (mul 365 24) }}
+{{- end }}
+<li class="resource">
+  <h3>
+    {{- if .url }}<a href="{{ .url }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+    {{ partial "draft-badge.html" . }}
+    {{- if $stale }} <span class="badge badge-stale">{{ i18n "may_be_outdated" }}</span>{{ end }}
+  </h3>
+  {{- with .description }}
+  <p>{{ . }}</p>
+  {{- end }}
+  <p class="meta">
+    {{- with .phone }}<a class="tel-inline" href="tel:{{ replaceRE `[^0-9+]` "" . }}">{{ i18n "phone" }}: {{ . }}</a>{{ end }}
+    {{- with .type }}{{ if $.phone }} · {{ end }}{{ i18n (printf "type_%s" .) }}{{ end }}
+    {{- with .languages }} · {{ i18n "languages" }}: {{ delimit (apply . "upper" ".") ", " }}{{ end }}
+  </p>
+</li>

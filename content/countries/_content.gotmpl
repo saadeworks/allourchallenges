@@ -1,0 +1,9 @@
+{{- /* One page per data/countries/<ISO3>.toml file. */}}
+{{- range $iso3, $c := hugo.Data.countries }}
+  {{- $.AddPage (dict
+    "path" $c.slug
+    "title" $c.name
+    "kind" "page"
+    "params" (dict "iso3" $iso3 "slug" $c.slug)
+  ) }}
+{{- end }}

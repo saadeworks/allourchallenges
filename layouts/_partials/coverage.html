@@ -1,0 +1,12 @@
+{{- /* Coverage of a country's data, counting verified entries only: "none", "partial" or "reviewed". */}}
+{{- $verified := 0 }}
+{{- with .emergency }}{{ if eq .status "verified" }}{{ $verified = add $verified 1 }}{{ end }}{{ end }}
+{{- with .crisis_directory }}{{ if eq .status "verified" }}{{ $verified = add $verified 1 }}{{ end }}{{ end }}
+{{- range .resources }}{{ if eq .status "verified" }}{{ $verified = add $verified 1 }}{{ end }}{{ end }}
+{{- $result := "none" }}
+{{- if and .page_last_reviewed .emergency (eq .emergency.status "verified") }}
+  {{- $result = "reviewed" }}
+{{- else if gt $verified 0 }}
+  {{- $result = "partial" }}
+{{- end }}
+{{- return $result }}

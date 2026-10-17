@@ -1,0 +1,2 @@
+{{- /* Should an entry with a status field be shown? Verified always; drafts only in local preview. */}}
+{{- return (or (eq .status "verified") hugo.IsDevelopment) }}

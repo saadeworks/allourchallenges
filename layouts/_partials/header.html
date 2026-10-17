@@ -1,0 +1,16 @@
+{{- $page := . }}
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <nav aria-label="{{ i18n "main_navigation" }}">
+      <ul>
+        {{- range site.Menus.main }}
+        <li><a href="{{ .URL }}"
+          {{- if $page.IsMenuCurrent "main" . }} aria-current="page"
+          {{- else if $page.HasMenuCurrent "main" . }} aria-current="true"{{ end }}>
+          {{- i18n .Identifier | default .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+{{- with .Description }}
+<meta name="description" content="{{ . }}">
+{{- end }}
+{{- if site.Params.noindex }}
+<meta name="robots" content="noindex">
+{{- end }}
+<meta name="color-scheme" content="light dark">
+{{- /* Empty icon: stops browsers requesting /favicon.ico until there is a logo (D7). */}}
+<link rel="icon" href="data:,">
+{{- with resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+{{- end }}
+{{- with site.GetPage "/essays" }}
+  {{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ i18n "essays" }} · {{ site.Title }}">
+  {{- end }}
+{{- end }}

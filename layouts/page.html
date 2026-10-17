@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article class="wrap prose">
+  <h1>{{ .Title }}</h1>
+  {{- if eq .Section "essays" }}{{ partial "page-meta.html" . }}{{ end }}
+  {{ .Content }}
+</article>
+{{ end }}

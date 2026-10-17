@@ -1,0 +1,21 @@
+# Interface strings. Add a file per language (e.g. lv.toml) to translate.
+
+skip_to_content = "Skip to content"
+main_navigation = "Main navigation"
+footer_navigation = "Footer navigation"
+
+essays = "Essays"
+countries = "Countries"
+about = "About"
+contribute = "Contribute"
+disclaimer = "Disclaimer"
+privacy = "Privacy"
+
+tags = "Tags"
+tagged = "Tagged"
+nothing_here_yet = "Nothing here yet."
+rss_feed = "RSS feed"
+
+page_not_found = "Page not found"
+page_not_found_text = "The page you are looking for does not exist or has moved."
+back_home = "Go to the home page"

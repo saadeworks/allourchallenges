@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="wrap prose">
+  <h1>{{ i18n "tags" }}</h1>
+  {{- with .Data.Terms.Alphabetical }}
+  <ul>
+    {{- range . }}
+    <li><a href="{{ .Page.RelPermalink }}">#{{ .Page.LinkTitle }}</a> <span class="muted">({{ .Count }})</span></li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <p class="muted">{{ i18n "nothing_here_yet" }}</p>
+  {{- end }}
+</div>
+{{ end }}

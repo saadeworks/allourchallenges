@@ -2,8 +2,52 @@ baseURL = "https://allourchallenges.com/"
 locale = "en"
 title = "All Our Challenges"
 
-# Placeholder phase: only the home page is needed.
-disableKinds = ["taxonomy", "term", "rss", "sitemap"]
-
 # Do not advertise the generator and version in page HTML.
 disableHugoGeneratorInject = true
+
+# Show tags as written (#ai, not #Ai).
+capitalizeListTitles = false
+
+# No sitemap until launch (pages are noindex for now).
+disableKinds = ["sitemap"]
+
+[params]
+  # Adds <meta name="robots" content="noindex"> to every page. Remove at launch.
+  noindex = true
+
+[taxonomies]
+  tag = "tags"
+
+# RSS only where a section asks for it (essays); see content/*/_index.md.
+[outputs]
+  home = ["html"]
+  section = ["html"]
+  taxonomy = ["html"]
+  term = ["html"]
+
+[menus]
+  [[menus.main]]
+    identifier = "essays"
+    pageRef = "/essays"
+    weight = 10
+  [[menus.main]]
+    identifier = "countries"
+    pageRef = "/countries"
+    weight = 20
+  [[menus.main]]
+    identifier = "about"
+    pageRef = "/about"
+    weight = 30
+
+  [[menus.footer]]
+    identifier = "contribute"
+    pageRef = "/contribute"
+    weight = 10
+  [[menus.footer]]
+    identifier = "disclaimer"
+    pageRef = "/disclaimer"
+    weight = 20
+  [[menus.footer]]
+    identifier = "privacy"
+    pageRef = "/privacy"
+    weight = 30

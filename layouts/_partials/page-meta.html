@@ -1,0 +1,12 @@
+{{- /* Date and tags for dated content (essays). Context: a page. */}}
+{{- if not .Date.IsZero }}
+<p class="meta">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date | time.Format ":date_long" }}</time>
+  {{- with .GetTerms "tags" }}
+  <span class="tags">
+    <span class="visually-hidden">{{ i18n "tags" }}:</span>
+    {{- range . }} <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>{{ end }}
+  </span>
+  {{- end }}
+</p>
+{{- end }}

@@ -1,0 +1,13 @@
+{{- $page := . }}
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="{{ i18n "footer_navigation" }}">
+      <ul>
+        {{- range site.Menus.footer }}
+        <li><a href="{{ .URL }}"{{ if $page.IsMenuCurrent "footer" . }} aria-current="page"{{ end }}>
+          {{- i18n .Identifier | default .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</footer>

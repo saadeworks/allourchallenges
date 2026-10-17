@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="wrap prose">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{- with .OutputFormats.Get "rss" }}
+  <p class="meta"><a href="{{ .RelPermalink }}">{{ i18n "rss_feed" }}</a></p>
+  {{- end }}
+  {{ partial "page-list.html" .Pages }}
+</div>
+{{ end }}

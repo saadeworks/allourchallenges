@@ -1,0 +1,16 @@
+{{- /* Lists pages newest first with date and summary. Context: a page collection. */}}
+{{- with . }}
+<ul class="page-list">
+  {{- range .ByDate.Reverse }}
+  <li>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{- partial "page-meta.html" . }}
+    {{- with .Summary }}
+    <p>{{ . | plainify }}</p>
+    {{- end }}
+  </li>
+  {{- end }}
+</ul>
+{{- else }}
+<p class="muted">{{ i18n "nothing_here_yet" }}</p>
+{{- end }}

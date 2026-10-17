@@ -1,0 +1,6 @@
+{{ define "main" }}
+<div class="wrap prose">
+  <h1><span class="muted">{{ i18n "tagged" }}</span> #{{ .Title }}</h1>
+  {{ partial "page-list.html" .Pages }}
+</div>
+{{ end }}

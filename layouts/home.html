@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.Title }}</title>
+  <meta name="robots" content="noindex">
+  <style>
+    :root { color-scheme: light dark; --bg: #fafaf8; --fg: #1a1a1a; --muted: #5c5c5c; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #141414; --fg: #ececec; --muted: #a8a8a8; } }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: grid; place-items: center; padding: 1rem;
+      background: var(--bg); color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+    }
+    h1 { font-size: clamp(1.75rem, 6vw, 3rem); margin: 0 0 .5rem; }
+    p { color: var(--muted); margin: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>{{ site.Title }}</h1>
+    <p>Coming soon.</p>
+  </main>
+</body>
+</html>

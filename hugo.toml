@@ -1,0 +1,6 @@
+baseURL = "https://allourchallenges.com/"
+locale = "en"
+title = "All Our Challenges"
+
+# Placeholder phase: only the home page is needed.
+disableKinds = ["taxonomy", "term", "rss", "sitemap"]

@@ -1,0 +1,5 @@
+# Cloudflare Pages response headers.
+# no-transform: stops Cloudflare from injecting scripts (e.g. its analytics
+# beacon) into our pages. The rest matches the Pages default.
+/*
+  Cache-Control: public, max-age=0, must-revalidate, no-transform
